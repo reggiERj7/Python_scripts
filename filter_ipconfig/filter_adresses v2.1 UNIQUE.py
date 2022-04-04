@@ -11,7 +11,7 @@ def strTolist():
 
 def filter():
     last_ip = ""
-    with open("new.txt", "w") as newfile:
+    with open(ready_file, "w") as newfile:
         for i in tmp:
             if re.findall("IPv4", i):
                 tmp_ip = str(re.findall("\d{3}\.\d{2}\.\d.*\.\d.*", i))
